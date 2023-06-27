@@ -1,0 +1,146 @@
+@charset "UTF-8";
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* убираем браузерную обводку */
+button:active,
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-width: 320px;
+}
+
+/* glob */
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.top {
+  min-height: 1024px;
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.top__container {
+  padding-top: 217px;
+}
+.top__title {
+  max-width: 740px;
+  margin: 0;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 64px;
+  font-weight: 700;
+}
+.top__text {
+  max-width: 480px;
+  margin: 0;
+  margin-bottom: 44px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.top__btn {
+  padding: 13px 74px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 30px;
+  background: #9c0332;
+}
+
+.word-link {
+  font-weight: 700;
+}
+
+.product {
+  background-color: #000915;
+}
+.product__list {
+  padding-top: 128px;
+  padding-bottom: 128px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 32px;
+}
+.product__item {
+  display: flex;
+  align-items: flex-end;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  min-height: 300px;
+  grid-column: span 4;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  border-radius: 16px;
+}
+.product__item-1 {
+  background-image: url(../img/product-1.png);
+}
+.product__item-2 {
+  background-image: url(../img/product-2.png);
+}
+.product__item-3 {
+  background-image: url(../img/product-3.jpg);
+}/*# sourceMappingURL=style.css.map */
