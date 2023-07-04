@@ -90,5 +90,5 @@
 // alert(info);
 
 // задание 10
-let name = prompt('Как вас зовут?');
-alert(`Привет ${name}`);
+// let name = prompt('Как вас зовут?');
+// alert(`Привет ${name}`);
