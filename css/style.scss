@@ -108,6 +108,10 @@ body {
 		font-size: 18px;
 		border-radius: 30px;
 		background: #9c0332;
+		transition: background 0.3s ease-in-out;
+		&:hover {
+			background: #eb443f;
+		}
 	}
 }
 
@@ -136,6 +140,10 @@ body {
 		font-weight: 600;
 		line-height: 32px;
 		border-radius: 16px;
+		transition: outline 0.3s ease-in-out;
+		&:hover {
+			outline: 3px solid #44d2ff;
+		}
 	}
 	&__item-1 {
 		background-image: url(../img/product-1.png);
@@ -147,3 +155,9 @@ body {
 		background-image: url(../img/product-3.jpg);
 	}
 }
+
+#happy {
+	cursor: url("../img/cursor.svg"), auto;
+}
+
+@import "mobile";
