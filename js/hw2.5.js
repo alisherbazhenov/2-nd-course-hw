@@ -55,42 +55,42 @@
 // -----------------------------------
 // задание 5
 // вариант 1
-// function correctNum() {
-// 	let a = Number(prompt('Введите первое число'));
-// 	let b = Number(prompt('Введите второе число'));
-// 	let res = a * b;
+// let a = Number(prompt('Введите первое число'));
+// let b = Number(prompt('Введите второе число'));
+// function correctNum(a, b) {
+// 	let res;
 // 	if (isNaN(a) || isNaN(b)) {
 // 		return 'Одно или оба значения не являются числом';
 // 	} else {
-// 		return res;
+// 		return res = a * b;;
 // 	}
 // }
-// console.log(correctNum());
+// console.log(correctNum(a, b));
 
 // вариант 2
-// function correctNum() {
-// 	let a = Number(prompt('Введите первое число'));
-// 	let b = Number(prompt('Введите второе число'));
-// 	let res = a * b;
+// let a = Number(prompt('Введите первое число'));
+// let b = Number(prompt('Введите второе число'));
+// function correctNum(a, b) {
+// 	let res;
 // 	if (a !== Number(a) || b !== Number(b)) {
 // 		return 'Одно или оба значения не являются числом';
 // 	} else {
-// 		return res;
+// 		return res = a * b;
 // 	}
 // }
-// console.log(correctNum());
+// console.log(correctNum(a, b));
 
 // -----------------------------------
 // задание 6
+// let a = Number(prompt('Введите число'));
 // const correctNum = () => {
-// 	let a = Number(prompt('Введите число'));
 // 	if (isNaN(a)) {
 // 		return 'Переданный параметр не является числом';
 // 	} else {
 // 		return `${a} в кубе равняется ${a ** 3}`;
 // 	}
 // }
-// console.log(correctNum());
+// console.log(correctNum(a));
 
 // -----------------------------------
 // задание 7
@@ -122,11 +122,11 @@
 // -----------------------------------
 // задание 8
 // function mounthNumber() {
-// 	let userAnswer = prompt(`Введите номер месяца, от 1-12`);
+// 	let userAnswer = Number(prompt(`Введите номер месяца, от 1-12`));
 
 // 	if (isNaN(userAnswer)) {
 // 		return 'Введите числовое значение';
-// 	} else if (userAnswer == 12 || userAnswer >= 1 && userAnswer <= 2) {
+// 	} else if (userAnswer === 12 || userAnswer >= 1 && userAnswer <= 2) {
 // 		return 'Зима';
 // 	} else if (userAnswer >= 3 && userAnswer <= 5) {
 // 		return 'Весна';
