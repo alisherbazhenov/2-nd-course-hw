@@ -57,12 +57,23 @@
 
 
 // --------------------------------------------------------------
-// задание 7     не работает
+// задание 7
+// Решение: вариант 1
 // const array = [9, 8, 7, 6, 5];
 // let userAnswer = Number(prompt('Угадайте число'));
 // let search = array.includes(userAnswer);
 
 // if (search === true) {
+// 	console.log('угадал');
+// } else {
+// 	console.log('не угадал');
+// }
+
+// задание 7
+// Решение: вариант 2
+// const array = [9, 8, 7, 6, 5];
+// let userAnswer = Number(prompt('Угадайте число'));
+// if (array.includes(userAnswer)) {
 // 	console.log('угадал');
 // } else {
 // 	console.log('не угадал');

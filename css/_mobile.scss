@@ -55,4 +55,24 @@
 			line-height: 22px;
 		}
 	}
+	.words {
+		&__container {
+			padding-top: 50px;
+			padding-bottom: 85px;
+		}
+		&__content {
+			align-items: center;
+		}
+		&__img {
+			grid-column: span 4;
+		}
+		&__title {
+			font-size: 32px;
+		}
+		&__text {
+			text-align: center;
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
 }
