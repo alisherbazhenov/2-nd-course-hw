@@ -8,7 +8,7 @@
 
 
 // let result = people.sort(function (a, b) {
-// 	if (a['age'] < b['age']) return -1;
+// 	if (a.age < b.age) return -1;
 // });
 
 // console.log(result);
@@ -56,8 +56,8 @@
 // ----------------------------------------------------------
 // задание 4
 // function delayForSecond(callback) {
-// Код писать можно только внутри этой функции
-// 	setTimeout(() => { callback() }, 3000);
+// 	Код писать можно только внутри этой функции
+// 	setTimeout(callback, 3000);
 // }
 
 // delayForSecond(function () {
@@ -67,8 +67,6 @@
 
 // ----------------------------------------------------------
 // задание 5
-// Функция delayForSecond через 1 секунду пишет в консоль «Прошла одна секунда», 
-// а затем вызывает переданный колбэк
 // function delayForSecond(cb) {
 // 	setTimeout(() => {
 // 		console.log('Прошла одна секунда');
@@ -77,14 +75,8 @@
 // 	}, 1000)
 // }
 
-// Функция sayHi выводит в консоль приветствие для указанного имени
 // function sayHi(name) {
-
 // 	console.log(`Привет, ${name}!`);
-// 	setTimeout(() => { sayHi }, delayForSecond);
 // }
 
-// Код выше менять нельзя
-
-// Нужно изменить код ниже:
-// delayForSecond(sayHi('Глеб'))
+// delayForSecond(() => sayHi('Глеб'));
